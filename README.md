@@ -456,7 +456,7 @@ kubectl get pods -n staging
 ---
 
 
-### Lesson 3: **Securely Managing Secrets in Kubernetes & Argo CD**
+### Lesson 2: **Securely Managing Secrets in Kubernetes & Argo CD**
 
 Managing secrets in Kubernetes and Argo CD is **critical** to ensure sensitive credentials, API keys, and certificates remain **secure** while maintaining automation in GitOps workflows. Below is a **comprehensive guide** on securely handling secrets, including integration with **external secret managers** like HashiCorp Vault, AWS Secrets Manager, and Azure Key Vault.
 
@@ -574,7 +574,7 @@ Use **SOPS** (Mozilla's Secrets OPerationS) with Kustomize to manage secrets **e
 ✅ **Leverage encryption tools (Helm Secrets, SOPS) for GitOps security.**  
 
 
-### Lesson 4: **Customizing Resource Management and Sync Policies in ArgoCD**
+### Lesson 3: **Customizing Resource Management and Sync Policies in ArgoCD**
 
 Argo CD offers powerful **resource management and sync policies**, allowing fine-grained control over how applications are deployed, updated, and maintained in Kubernetes. Let’s explore how to customize these settings to optimize deployment behavior.
 
