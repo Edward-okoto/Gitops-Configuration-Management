@@ -1,0 +1,7 @@
+replicaCount: 2
+image:
+  repository: my-app-image
+  tag: latest
+service:
+  type: ClusterIP
+  port: 8080

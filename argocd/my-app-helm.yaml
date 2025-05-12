@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/Edward-okoto/gitops-Configuration-Management.git'
+    path: my-app           # Points to your Helm chart directory
+    targetRevision: HEAD   # Uses the latest commit
+    helm:
+      valueFiles:
+        - values.yaml      # Specifies Helm values file
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true          # Removes outdated resources
+      selfHeal: true       # Restores drifted resources
